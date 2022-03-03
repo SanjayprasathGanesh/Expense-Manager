@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+  margin: 2px;
+  padding: 2px;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-form{
+  background: #fff;
+  padding: 30px 50px;
+  border-radius: 10px;
+}
+.form-title{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-title h1{
+  margin: 0px;
+  color: red;
+}
+.single-input{
+  width: 270px;
+  border:3px solid black;
+  display: flex;
+  margin-bottom: 15px;
+}
+.single-input i{
+  padding: 8px 16px;
+  color: #0cd6a8;
+}
+.single-input input{
+  border:0px solid #c1c1c1;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  font-size: 18px;
+}
+.submit-btn{
+   border:5px solid green;
+   margin-top: 30px;
+  
+}
+.submit-btn input{
+   background: crimson;
+   color: white;
+   cursor: pointer;
+} 
+body {
+  background-image: url('https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMTIzNjQwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
+}
+</style>
+<body>
+<div class="container">
+  <div class="my-form">
+    <div class="form-title">
+      <h1>User Login</h1>
+    </div>
+    <form action="login.php" method = "post">
+      <div class="single-input">
+        <span><i class="fas fa-user"></i></span>
+        <input type="text" placeholder="User Name" name = "uname">
+      </div>
+      <div class="single-input">
+        <span><i class="fas fa-unlock"></i></span>
+        <input type="password" placeholder="Password" name = "psw">
+      </div>
+      <input type="checkbox" id="remember" name="remember" value="" required="">
+  	  <label for="terms">Remember me</label><br>
+      <div class="single-input submit-btn">
+        <input type="submit" value="Login">
+      </div>
+      <br>
+<h3 style = "text-align : center;"><a href="http://localhost/emdaily/signup.html">Create an Account</a></h3>
+    </form>
+  </div>
+</div>
+</body>
+</html>
