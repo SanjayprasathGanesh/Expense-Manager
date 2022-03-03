@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<hr>
+<h1 style="color:green;" align="center"><i>Expense Manager</i></h1>
+<hr>
+<style>
+body {
+  background-color: gold;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: red;
+}
+
+.active {
+  background-color: black;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a class="active" href="https://expensemanager.w3spaces.com/index.html"><i class="fa fa-home"></i></a> 
+  <a href="https://dailyexpenses.w3spaces.com/index.html"><i class="fa fa-search"></i></a> 
+  <a href="https://bankaccloginem.w3spaces.com/index.html"><i class="fa fa-bank"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="https://emaboutus.w3spaces.com/index.html"><i class="fa fa-gear"></i></a> 
+</div>
+</body>
+<br>
+
+<!DOCTYPE html>
+<html>
+<body>
+<hr>
+<h2 style="color:red;" align="center">Necessary Monthly Expenses</h2>
+<hr>
+<body>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 5px solid black;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: limegreen;
+}
+</style>
+<table>
+  <tr>
+    <th><i>Expenses Name </i></th>
+    <th><i>Date</i></th>
+    <th><i>Type</i></th>
+    <th><i>Quantity </i></th>
+    <th><i>Total amount </i></th>
+    <th><i>Save</i><th>
+  </tr>
+  
+  <tr>
+  <td>Groceries</td>
+  <td>
+  <form action="groceries.php" target="_blank" method="post">
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+    </td>
+	<td>
+  <label for="groceries"></label>
+  <select id="groceries" name="type">
+    <option value="Rices and Pulses">Rices and Pulses</option>
+    <option value="Monthly groceries">Monthly groceries</option>
+    <option value="Pooja Items">Pooja Items</option>
+    <option value="Sanitary Items">Sanitary Items</option>
+    <option value="Others">Others</option>
+  </select>
+  </td>
+  <td>
+  <label for="groceries"></label>
+  <select id="groceries" name="quantity">
+    <option value="10 Items">10 Items</option>
+    <option value="20 Items">20 Items</option>
+    <option value="30 Items">30 Items</option>
+    <option value="40 Items">40 Items</option>
+    <option value="50 Items">50 Items</option>
+  </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>House Rent </td>
+  <td>
+  <form action="rent.php" target="_blank" method="post">
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+   </td>
+   <td>
+        <label for="House rent"></label>
+  	<select id="rent" name="type">
+    		<option value="1 BHK">1 BHK</option>
+    		<option value="2 BHK">2 BHK</option>
+    		<option value="3 BHK">3 BHK</option>
+    		<option value="Bachelor Rooms">Bachelor Rooms</option>
+  	</select>
+  </td>
+  <td>
+  	<label for="House rent"></label>
+  	<select id="rent" name="quantity">
+    		<option value="1">1 month</option>
+    		<option value="2">2 months</option>
+    		<option value="3">3 months</option>
+  	</select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name ="totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Clothing</td>
+  <td>
+  <form action="clothing.php" target="_blank" method="post">
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+   </td>
+   <td>
+  	<label for="Clothing"></label>
+  	<select id="Clothing" name="type">
+    		<option value="Shirts">Shirts</option>
+    		<option value="Pants">Pants</option>
+    		<option value="Tshirts">Tshirts</option>
+    		<option value="Jean Pants">Jean Pants</option>
+    		<option value="Kurthi">Kurthi</option>
+    		<option value="Salwars">Salwars</option>
+    		<option value="Chudi">Chudi</option>
+    		<option value="Legins">Legins</option>
+    		<option value="Night dress">Night dress</option>
+    		<option value="Track pants">Track pants</option>
+    		<option value="Others">Others</option>
+  	</select>
+  </td>
+  <td>
+  	<label for="Clothing"></label>
+  	<select id="Clothing" name="quantity">
+    		<option value="1">1</option>
+    		<option value="2">2</option>
+    		<option value="3">3</option>
+    		<option value="4">4</option>
+    		<option value="5">5</option>
+    		<option value="More than 5">More than 5</option>
+  </td>
+  
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+
+  <tr>
+  <td>Fuel</td>
+  <form action="fuel.php" target="_blank" method="post">
+  <td>
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+   	<label for="Fuel"></label>
+  	<select id="Fuel" name="type">
+  		<option value="Petrol">Petrol</option>
+    		<option value="Diesel">Diesel</option>
+        	<option value="EV">EV</option>
+        	<option value="Speed Petrol">Speed Petrol</option>
+    </select>
+  </td>
+  <td>
+  	<label for="Fuel"></label>
+  	<select id="Fuel" name="quantity">
+    		<option value="10 days">10 days</option>
+    		<option value="20 days">20 days</option>
+    		<option value="30 days">30 days</option>
+  	</select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Gas cylinder</td>
+  <form action="gas.php" target="_blank" method="post">
+  <td>
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  	<label for="gas"></label>
+  	<select id="gas" name="type">
+    	<option value="Bhaarath Gas">Bhaarath Gas</option>
+    	<option value="Indane Gas">Indane Gas</option>
+    	<option value="HP Gas">HP Gas</option>
+    	<option value="Others">Others</option>
+  </td>
+  <td>
+   	<label for="gas"></label>
+   	<select id="gas" name="quantity">
+    	<option value="1 Cylinder">1 Cylinder</option>
+    	<option value="2 Cylinder">2 Cylinder</option>
+    	<option value="More than 3 Cylinder">More than 3 Cylinder</option>
+  	</select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+
+  <tr>
+  <td>Electricity Bill</td>
+  <form action="eb.php" target="_blank" method="post">
+  <td>
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  	<label for="EB"></label>
+  	<select id="EB" name="type">
+    	<option value="Single Phase">Single Phase</option>
+    	<option value="2 Phase">2 Phase</option>
+    	<option value="3 Phase">3 Phase</option>
+    	<option value="Industry">Industry</option>
+  	</select>
+  </td>
+  <td>
+  	<label for="EB"></label>
+  	<select id="EB" name="quantity">
+    	<option value="1 month">1 month</option>
+    	<option value="2 month">2 month</option>
+    	<option value="3 month">3 month</option>
+  	</select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+
+  <tr>
+  <td>Wifi Bill</td>
+  <form action="wifi.php" target="_blank" method="post">
+  <td>
+  	<label for="date"></label>
+  	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="wifi"></label>
+  <select id="wifi" name="type">
+    <option value="Jio Fiber">Jio Fiber</option>
+    <option value="Sky Link">Sky Link</option>
+    <option value="ACT">ACT</option>
+    <option value="Others">Others</option>
+  </select>
+  </td>
+  <td>
+  <label for="wifi"></label>
+  <select id="wifi" name="quantity">
+    <option value="100 Mbps & above">100 Mbps and above</option>
+    <option value="50 Mbps">50 Mbps</option>
+    <option value="Less than 20 Mbps">Less than 20 Mbps</option>
+  </select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+  	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Mobile Recharge</td>
+  <form action="recharge.php" target="_blank" method="post">
+  <td>
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  	<label for="Recharge"></label>
+  	<select id="Recharge" name="type">
+    		<option value="Jio">Jio</option>
+    		<option value="Airtel">Airtel</option>
+    		<option value="VI(Vodaphone)">VI(Vodaphone)</option>
+    		<option value="BSNL">BSNL</option>
+    		<option value="Others">Others</option>
+  	</select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" placeholder = "Enter Plan Name"  name = "quantity">
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>  
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Cable TV or Dish</td>
+  <form action="cable.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="Cable"></label>
+  <select id="Cable" name="type">
+    <option value="Cable TV">Cable TV</option>
+    <option value="Tata play">Tata play</option>
+    <option value="Sun Direct">Sun Direct</option> 
+    <option value="Others">Others</option> 
+  </select>
+  </td>
+  <td>
+  <label for="Cable"></label>
+  <select id="Cable" name="quantity">
+    <option value="1 month">1 month</option>
+    <option value="2 months">2 months</option>
+    <option value="More than 2 months">More than 2 months</option>  
+  </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+ 
+  <tr>
+    <td>Fruits and Vegetables </td>
+    <form action="fruits.php" target="_blank" method="post">
+    <td>
+		<label for="date"></label>
+		<input type="date" id="date" name="date">
+	</td>
+    <td>
+    <label for="Vegetables & Fruits"></label>
+  	<select id="fruits" name="type">
+    	<option value="Eggs">Eggs</option>
+    	<option value="Fruits">Fruits</option>
+        <option value="Vegetables">Vegetables</option>
+        <option value="Grains and Pulses">Grains and Pulses</option>
+        <option value="Others">Others</option>
+    </select>
+    </td>  
+    
+    <td>
+  	<label for="veg"></label>
+  	<select id="fruits" name="quantity">
+    	<option value="1 month">1 month</option>  
+  	</select>
+  </td>
+  <td>
+
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Studies</td>
+  <form action="studies.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="std"></label>
+  <select id="std" name="type">
+    <option value="Xerox">Xerox</option>
+    <option value="Buying books">Buying books</option>
+    <option value="Project Work">Project Work</option>  
+    <option value="Exam Fees">Exam Fees</option>  
+    <option value="Notes">Notes</option>  
+  </select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" placeholder = "Enter the Quantity" name = "quantity">
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+  <p align="right">
+<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </form>
+  </td>
+  </tr>
+  
+  <tr>
+  <td>Medical</td>
+  <form action="medical.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="Med"></label>
+  <select id="med" name="type">
+    <option value="Out Patient">Out Patient</option>
+    <option value="Surgeries">Surgeries</option>
+    <option value="Admited">Admited</option>  
+    <option value="Consutanting">Consutanting</option>  
+    <option value="Dental">Dental</option>  
+    <option value="ENT">ENT</option>  
+    <option value="Cardio">Cardio</option>  
+    <option value="Others">Others</option>  
+  </select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" placeholder = "Enter the days" name = "quantity">
+  </td>
+
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Insurance</td>
+  <form action="insurance.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="Med"></label>
+  <select id="med" name="type">
+    <option value="Family members">Family members</option>
+    <option value="Bike/car">Bike/car</option>
+    <option value="LIC">LIC</option>   
+    <option value="Others">Others</option>  
+  </select>
+  <td>
+  <label for="Med"></label>
+  <select id="med" name="quantity">
+    <option value="1 Person">1 Person</option>
+    <option value="2 Person">2 Persons</option>
+    <option value="More than 3">More than 3</option>   
+    <option value="Others">Others</option>  
+  </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name= "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Personal works</td>
+  <form action="personal.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="personal"></label>
+  <select id="personal" name="type">
+    <option value="Haircut">Haircut</option>
+    <option value="Trimming">Trimming</option>
+    <option value="Shaving">Shaving</option>
+    <option value="Others">others</option>
+  </select>
+  <td>
+  	<label for="personal"></label>
+  	<select id="personal" name="quantity">
+    	<option value="1 Person">1 Person</option>
+    	<option value="2 Persons">2 Persons</option>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Household Things</td>
+  <form action="household.php" target="_blank" method="post">
+  <td>
+  	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="household"></label>
+  <select id="household" name="type">
+    <option value="Vessels">Vessels</option>
+    <option value="Kitchen Utilities">Kitchen Utilities</option>
+    <option value="Tools and Containners">Tools and Containners</option>
+    <option value="Others">others</option>
+  </select>
+  <td>
+   <label for="household"></label>
+  	<select id="household" name="quantity">
+    <option value="Less than 5">Less than 5</option>
+    <option value="More than 10">More than 10</option>
+    <option value="Others">Others</option>
+    </select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Non Veg</td>
+  <form action="nonveg.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="food"></label>
+  <select id="food" name="type">
+    <option value="Chicken">Chicken</option>
+    <option value="Meat">Meat</option>
+    <option value="Beaf">Beaf</option>
+    <option value="Pork">Pork</option>
+    <option value="Others">Others</option>
+  </select>
+  </td>
+  <td>
+  <label for="food"></label>
+  <select id="food" name="quantity">
+    <option value="1">1 </option>
+    <option value="2">2</option>
+    <option value="More than 2">More than 2</option>
+  </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Transportation Fare</td>
+  <form action="transport.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="trans"></label>
+  <select id="trans" name="type">
+    <option value="Within the City">Within the City</option>
+    <option value="Related to bussiness">Related to bussiness</option>
+  </select>
+  </td>
+  <td>
+  <label for="trans"></label>
+  <select id="trans" name="quantity">
+    <option value="1 person">1 person</option>
+    <option value="More than 1 Person">More than 1 Person</option>
+  </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Childrens Fees</td>
+  <form action="Fee.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="fee"></label>
+  <select id="fee" name="type">
+    <option value="School Fees">School Fees</option>
+    <option value="College Fees">College Fees</option>
+    <option value="Bus Fees">Bus Fees</option>
+    <option value="Exam Fees">Exam Fees</option>
+    <option value="Other Fees">Other Fees</option>
+  </select>
+  </td>
+  <td>
+  <label for="fee"></label>
+  <select id="fee" name="quantity">
+    <option value="For 1 Kid">For 1 Kid</option>
+    <option value="For 2 Kids">For 2 Kids</option>
+    <option value="More than 2 kids">More than 2 kids</option>
+   </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Newspaper Fees</td>
+  <form action="newspaper.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="fee"></label>
+  <select id="fee" name="type">
+    <option value="1">The hindu</option>
+    <option value="2">Dinamalar</option>
+    <option value="3">The Indian Express</option>
+    <option value="4">Times of India</option>
+    <option value="5">Dinathanthi</option>
+  </select>
+  </td>
+  <td>
+  <label for="fee"></label>
+  <select id="fee" name="quantity">
+    <option value="Per day 1">Per day 1</option>
+    <option value="Per day more than 1">Per day more than 1 </option>
+   </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Buying Appliances</td>
+   <form action="appliances.php" target="_blank" method="post">
+   <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="Buying"></label>
+  <select id="Buying" name="type">
+    <option value="Smart Phones">Smart Phones</option>
+    <option value="Tablets">Tablets</option>
+    <option value="Laptops">Laptops</option>
+    <option value="Fridge">Fridge</option>
+    <option value="Washing Machine">Washing Machine</option>
+    <option value="Chimney">Chimney</option>
+    <option value="Oven">Oven</option>
+    <option value="Tv and Hometheaters">Tv and Hometheaters</option>
+    <option value="Airconditoners">Airconditoners</option>
+    <option value="Water heaters">Water heaters</option>
+    <option value="Others">Others</option>
+  </select>
+  </td>
+  <td>
+  <label for="Buying"></label>
+  <select id="Buying" name="quantity">
+    <option value="1">1</option>
+    <option value="More than 1">More than 1</option>
+  </select>
+  </td>
+  <td>
+	<label for="name"></label>
+	<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+  
+  <tr>
+  <td>Furnitures</td>
+  <form action="furniture.php" target="_blank" method="post">
+  <td>
+	<label for="date"></label>
+	<input type="date" id="date" name="date">
+  </td>
+  <td>
+  <label for="Furn"></label>
+  <select id="Furn" name="type">
+    <option value="Sofas">Sofas</option>
+    <option value="Cot">Cot</option>
+    <option value="Wardrobe">Wardrobe</option>
+    <option value="Interior designs">Interior designs</option>
+    <option value="Chairs and Tables">Chairs and Tables</option>
+    <option value="Stands">Stands</option>
+    <option value="Bueroes">Bueroes</option>
+    <option value="Dining Table">Dining Table</option>
+    <option value="Others">Others</option>
+  </select>
+  </td>
+  <td>
+  <label for="Furn"></label>
+  <select id="Furn" name="quantity">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="Combo Offers">Combo Offers</option>
+    <option value="More than 3">More than 3</option>
+   </select>
+  </td>
+  <td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+  </td>
+  <td>
+	<p align="right">
+	<input type="submit" onclick="alert('Your Necessary Monthly expenses has beed saved successfully')"></p>
+  </td>
+  </form>
+  </tr>
+</table>
+</body>
+</html>

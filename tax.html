@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<hr>
+<h1 style="color:green;" align="center"><i>Expense Manager</i></h1>
+<hr>
+<style>
+body {
+  background-color: gold;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: red;
+}
+
+.active {
+  background-color: black;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a class="active" href="https://expensemanager.w3spaces.com/index.html"><i class="fa fa-home"></i></a> 
+  <a href="https://dailyexpenses.w3spaces.com/index.html"><i class="fa fa-search"></i></a> 
+  <a href="https://bankaccloginem.w3spaces.com/index.html"><i class="fa fa-bank"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="https://emaboutus.w3spaces.com/index.html"><i class="fa fa-gear"></i></a> 
+</div>
+</body>
+<br>
+
+<!DOCTYPE html>
+<html>
+<body>
+<hr>
+<h2 style="color:red;" align="center">TAX</h2>
+<hr>
+<br>
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 5px solid black;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: limegreen;
+}
+</style>
+<table>
+  <tr>
+    <th><i>Income type</i></th>
+    <th><i>Date</i></th>
+    <th><i>Type</i></th>
+    <th><i>Duration</i></th>
+    <th><i>Total Amount</i></th>
+    <th><i>Save</i></th>
+  </tr>
+  
+  <tr>
+    <td>Personal Income Tax</td>
+    <form action="tax.php" target="_blank" method="post">
+    <td>
+  	<label for="date"></label>
+  	<input type="date" id="date" name="date">
+    </td>
+    <td>
+		<label for="name"></label>
+		<input type="text" id="type" name = "type">
+	</td>
+    
+    <td>
+    <label for="it"></label>
+  	<select id="it" name="duration">
+    	<option value="1/2 Year">1/2 Year</option>
+    	<option value="1 Year">1 Year</option>
+        <option value="More than a Year">More than a Year</option>
+    </select>
+    </td>
+    
+  	<td>
+		<label for="name"></label>
+		<input type="text" id="amount" name = "totalamt">
+	</td>
+    <td>
+    <p align="right">
+<input type="submit" onclick="alert('Your Tax expenses has beed saved successfully')"></p>
+    </td>
+    </form>
+    </tr>
+</table>
+</body>
+</html>
