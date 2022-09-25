@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Sign Up Form</title>
+<head>
+<hr>
+<h1 style = "text-align : center;">Welcome to Expense Manager</h1>
+<hr>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; 
+  display: flex;
+  width: 130%;
+  margin-bottom: 40px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 130%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<h1 style = "text-align : center;">Sign up Form</h1>
+<img src="https://imageio.forbes.com/specials-images/imageserve/5f0dadd7674a780007018f55/The-Red-Lake-of-Stars--Years-ago--before-over-fishing--Little-Redfish-Lake-was-called/960x0.jpg?fit=bounds&format=jpg&width=960" width="350" height="450" alt="Signup" align="left">
+<form action="signup.php" method = "post"style="max-width:400px;margin:auto">
+    <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrname">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-check-circle icon"></i>
+    <input class="input-field" type="repeat password" placeholder="Repeat Password" name="reppsw">
+  </div>
+  <input type="checkbox" id="terms" name="terms" value="" required="">
+  <label for="terms">I agree all statements in Terms of service</label><br>
+  <br>
+  <button type="submit" class="btn" onclick="alert('Account Created Successfully')">Register</button>
+</form>
+
+<br>
+<h3 style = "text-align : center;"><a href="http://localhost/emdaily/login.html">I m Already an user!</a></h3>
+</body>
+</html>
